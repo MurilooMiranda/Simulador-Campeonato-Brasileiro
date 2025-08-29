@@ -1,0 +1,109 @@
+.tabela-container {
+  width: 65%; 
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem 2rem;
+}
+
+.tabela-container h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 10px;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600; 
+}
+
+th {
+  font-family: 'Poppins', sans-serif;
+  color: #888;
+  font-weight: 500;
+  font-size: 0.8rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+th.pos {
+  text-align: left;
+}
+
+td.pos {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  border-right: 1px solid #f0f0f0;
+}
+
+.escudo-tabela {
+  width: 35px;
+  height: 35px;
+  margin-right: 12px; 
+}
+
+.posicao-numero {
+  width: 25px; 
+  text-align: center;
+  margin-right: 15px; 
+  font-weight: 700;
+}
+
+.nome-time {
+  white-space: nowrap;
+}
+
+td.pontos {
+  font-weight: 700; 
+  font-size: 1.1rem;
+  border-right: 1px solid #f0f0f0; 
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.libertadores .posicao-numero { color: #007bff; }
+.pre-libertadores .posicao-numero { color: #17a2b8; }
+.sul-americana .posicao-numero { color: #28a745; }
+.rebaixados .posicao-numero { color: #dc3545; }
+
+.legenda {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.legenda-item {
+  display: flex;
+  align-items: center;
+}
+
+.legenda .cor {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.legenda .libertadores { background-color: #007bff; }
+.legenda .pre-libertadores { background-color: #17a2b8; }
+.legenda .sul-americana { background-color: #28a745; }
+.legenda .rebaixados { background-color: #dc3545; }

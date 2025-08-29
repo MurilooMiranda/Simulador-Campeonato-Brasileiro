@@ -1,0 +1,145 @@
+/* src/components/ListaJogos.css */
+
+.lista-jogos-container {
+  width: 35%; /* Ajusta a largura para caber ao lado da tabela maior */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+
+.lista-jogos-container h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #1a237e;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.navegacao-rodada {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 0 10px;
+}
+
+.navegacao-rodada h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  color: #1a237e;
+  margin: 0;
+}
+
+.navegacao-rodada button {
+  background-color: #4CAF50; /* Verde vibrante */
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 25px; /* Botões mais arredondados */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navegacao-rodada button:hover {
+  background-color: #45a049; /* Escurece no hover */
+  transform: translateY(-1px); /* Pequeno efeito de elevação */
+}
+
+.navegacao-rodada button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.rodadas-wrapper {
+  max-height: 70vh; /* Ajustado para caber o novo padding */
+  overflow-y: auto;
+  padding-right: 15px; /* Mais espaço para a barra de rolagem */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #fbfbfb; /* Fundo ligeiramente diferente para a área dos jogos */
+}
+
+.partida {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px; /* Mais espaço entre as partidas */
+  padding: 12px 8px;
+  border-bottom: 1px solid #f0f0f0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #333;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03); /* Sombra sutil para cada jogo */
+}
+
+.partida:last-child {
+  border-bottom: none; /* Remove borda da última partida */
+}
+
+.partida .time {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Mais espaço entre o escudo e a sigla */
+  flex: 1;
+}
+
+.partida .time.casa {
+  justify-content: flex-start;
+}
+
+.partida .time.fora {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.partida img {
+  width: 36px; /* Escudos maiores na lista de jogos */
+  height: 36px;
+}
+
+.partida .placar {
+  width: 50px; /* Campos de placar um pouco maiores */
+  text-align: center;
+  font-size: 1.2em; /* Texto do placar maior */
+  border: 1px solid #b0b0b0;
+  border-radius: 6px;
+  margin: 0 12px;
+  padding: 8px 4px;
+  background-color: #fefefe;
+  color: #333;
+  font-weight: bold;
+}
+
+.partida span:not(.time) { /* Para o 'X' */
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #666;
+}
+
+/* Scrollbar estilizada */
+.rodadas-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.rodadas-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.rodadas-wrapper::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border-radius: 10px;
+}
+
+.rodadas-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0;
+}
