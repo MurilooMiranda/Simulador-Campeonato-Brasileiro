@@ -54,7 +54,7 @@ Antes de começar, garanta que você tenha instalado:
 **1. Clone o Repositório**
 
 ```bash
-git clonehttps://github.com/MurilooMiranda/Simulador-Campeonato-Brasileiro
+git clone https://github.com/MurilooMiranda/Simulador-Campeonato-Brasileiro
 cd Simulador-Campeonato-Brasileiro
 ````
 
