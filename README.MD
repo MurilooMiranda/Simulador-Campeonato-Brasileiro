@@ -1,9 +1,5 @@
 # ⚽ Simulador do Campeonato Brasileiro - Série A
 
-![Screenshot do Projeto](https://i.imgur.com/22d792.png)
-
-*(Dica: Tire um print da sua aplicação finalizada e substitua o link da imagem acima para mostrar seu trabalho!)*
-
 ## 📖 Sobre o Projeto
 
 Este é um projeto web full-stack criado como um exercício prático para desenvolver e aprimorar habilidades em desenvolvimento de software. A aplicação permite ao usuário simular os resultados de todas as 380 partidas do Campeonato Brasileiro, calculando e atualizando a tabela de classificação em tempo real.
