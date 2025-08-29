@@ -162,3 +162,4 @@ A estrutura de pastas foi organizada para separar claramente as responsabilidade
     │   └── main.jsx            # Ponto de entrada da aplicação
     └── package.json
 ```
+#### **OBSERVAÇÃO IMPORTANTE:** Essa é uma simulação apenas para aprendizado. Ela não possui os times e partidas reais do Campeonato Brasileiro de 2025.
